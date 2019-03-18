@@ -567,13 +567,6 @@ Sometimes you’ll need to clean up your images.
 `-a` is short for `--all`. Delete unused images, not just dangling ones.  
 `--volumes` Remove unused volumes.
 
-
-
-
-
-
-
-
 <hr>
 
 ###### Information retrieved from:
