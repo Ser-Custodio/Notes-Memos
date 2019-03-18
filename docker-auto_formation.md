@@ -99,9 +99,9 @@ ENV is nice for setting constants. If you are using the same value multiple time
 With Dockerfiles there are often multiple ways to accomplish the same thing. The best method for your case is a matter of balancing Docker conventions, transparency, and speed. For example, RUN, CMD, and ENTRYPOINT serve different purposes, and can all be used to execute commands.
 
 #### RUN  
-RUN creates a layer at builmd time. Docker commits the state of the image after each RUN.
+RUN creates a layer at build time. Docker commits the state of the image after each RUN.
 RUN is often used to install packages into an image. In the exemple `RUN apk update && apk upgrade && apk add bash`  tells Docker to update and upgrade the packages from the base image and to install _bash_ into the image.
-_apk_ stands for _Alpine Linux package manager_. If you're using a Linux base image in a flavor other than Alpine, then you’d install packages with `RUN apt-get` instead of _apk_. `apt` stand for _advanced package tool_
+`apk` stands for _Alpine Linux package manager_. If you're using a Linux base image in a flavor other than Alpine, then you’d install packages with `RUN apt-get` instead of _apk_. `apt` stand for _advanced package tool_
 
 RUN, CMD and ENTRYPOINT can be used in exec form or shell form. Exec form uses JSON array syntax like:  
 `RUN ["my_executable", "my_first_param1", "my_second_param2"]`.
@@ -566,3 +566,15 @@ Sometimes you’ll need to clean up your images.
 
 `-a` is short for `--all`. Delete unused images, not just dangling ones.  
 `--volumes` Remove unused volumes.
+
+
+
+
+
+
+
+
+
+
+###### Information retrieved from:
+[Jeff Hale](https://towardsdatascience.com/@jeffhale)
