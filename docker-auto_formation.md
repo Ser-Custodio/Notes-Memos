@@ -574,7 +574,7 @@ Sometimes you’ll need to clean up your images.
 
 
 
-
+<hr>
 
 ###### Information retrieved from:
 [Jeff Hale](https://towardsdatascience.com/@jeffhale)
